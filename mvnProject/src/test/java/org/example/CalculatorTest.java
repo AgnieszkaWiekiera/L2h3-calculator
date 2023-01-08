@@ -14,7 +14,7 @@ class CalculatorTest {
         double value2 = 7;
 
         //when
-        double calculate = Calculator.calculate(4,7,'+');
+        double calculate = Calculator.getSum(4,7);
 
         //then
         Assertions.assertEquals(11,calculate);
@@ -27,7 +27,7 @@ class CalculatorTest {
         double value2 = 2;
 
         //when
-        double calculate = Calculator.calculate(12,2,'-');
+        double calculate = Calculator.getSubtraction(12,2);
 
         //then
         Assertions.assertEquals(10,calculate);
@@ -40,7 +40,7 @@ class CalculatorTest {
         double value2 = 4;
 
         //when
-        double calculate = Calculator.calculate(5,4,'*');
+        double calculate = Calculator.getMultiplication(5,4);
 
         //then
         Assertions.assertEquals(20,calculate);
@@ -53,7 +53,7 @@ class CalculatorTest {
         double value2 = 3;
 
         //when
-        double calculate = Calculator.calculate(18,3,'/');
+        double calculate = Calculator.getDivision(18,3);
 
         //then
         Assertions.assertEquals(6,calculate);
